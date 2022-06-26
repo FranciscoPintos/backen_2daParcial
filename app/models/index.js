@@ -35,6 +35,10 @@ db.Restaurante=require("./restaurante.model")(sequelize,Sequelize);
 db.Cliente=require("./cliente.model")(sequelize,Sequelize);
 db.Mesa=require("./mesa.model")(sequelize,Sequelize);
 db.Reserva=require("./reserva.model")(sequelize,Sequelize);
+db.Categoria=require("./categoria.model")(sequelize,Sequelize);
+db.Producto=require("./producto.model")(sequelize,Sequelize);
+db.Cabecera=require("./cabecera.model")(sequelize,Sequelize);
+db.Detalle=require("./detalle.model")(sequelize,Sequelize);
 
 
 module.exports = db;

@@ -1,10 +1,10 @@
 import React, {useState,useEffect} from "react";
-import axios from "axios";
+
 import { useHistory } from "react-router-dom";
 
 
 
-const url = "http://localhost:9090/api/";
+
 
 
 
@@ -102,7 +102,6 @@ export default function AddCliente() {
             <div className="col-md-12 text-center">
                 <button type="submit" className="btn btn-primary float-end"> Guardar< /button>
             </div>
-            >
         </form>
     );
 };

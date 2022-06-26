@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-import {BrowserRouter as Router, Routes, Route, Link, Switch} from "react-router-dom";
+import { Route, Link, Switch} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -12,13 +12,13 @@ import Mesa from "./components/mesa.component";
 import AddMesa from "./components/add-mesa.component";
 import MesasList from "./components/mesa-list.components";
 
-import Reserva from "./components/reserva.component";
-import AddReserva from "./components/add-reserva.component";
-import ReservasList from "./components/reserva-list.component";
+
 import AddreservaForm from "./components/add_reserva.component";
-import Reserva_listComponent from "./components/reserva_list.component";
+
 import AddCliente from "./components/add-cliente.component";
 import ReservaComponent from "./components/reserva.component";
+
+import ConsumoComponent from "./components/consumo.component";
 
 
 class App extends Component {
@@ -54,7 +54,10 @@ class App extends Component {
                             <Route exact path="/" component={ReservaComponent} />
                             <Route exact path="/reserva/add/" component={AddreservaForm} />
                             <Route exact path="/cliente/add/" component={AddCliente} />
+                            <Route exact path="/consumo/:id_reserva/" component={ConsumoComponent} />
                             {/*<Route exact path="/reserva/:id/" component={ReservasList} />*/}
+
+
 
 
 

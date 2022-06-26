@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", (req, res) => {
 
-    res.json({message: "Bienvenido Node backend 2020"});
+    res.json({message: "Bienvenido Node backend"});
 
 });
 
@@ -39,7 +39,13 @@ require("./app/routes/restaurante.routes")(app);// set port, listen for requests
 require("./app/routes/mesa.routes")(app);// set port, listen for requests
 require("./app/routes/cliente.routes")(app);// set port, listen for requests
 require("./app/routes/reserva.routes")(app);// set port, listen for requests
+require("./app/routes/categoria.routes")(app);// set port, listen for requests
+require("./app/routes/producto.routes")(app);// set port, listen for requests
+require("./app/routes/cabecera.routes")(app);// set port, listen for requests
+require("./app/routes/detalle.routes")(app);// set port, listen for requests
 
+//Relaciones
+require("./app/routes/asociations");
 
 const PORT = process.env.PORT || 9090;
 
